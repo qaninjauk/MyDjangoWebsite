@@ -16,9 +16,14 @@
 ### 4. Upgrade pip version:
 - pip install --upgrade pip
 
+### 5. Upgrade pip version:
+- pip install pip3
+
 ### 5. Intall a package/library:
 - pip install django
 
-### 6. Import libraries for project
-- import requests
-- from bs4 import BeautifulSoup
+### 6. Commands to run a django installation
+cd django_venv
+django-admin startproject mysite
+django-admin  --version
+python3 manage.py runserver
