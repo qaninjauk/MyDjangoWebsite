@@ -22,8 +22,13 @@
 ### 5. Intall a package/library:
 - pip install django
 
-### 6. Commands to run a django installation
+### 6. Create a django installation
 cd django_venv
 django-admin startproject mysite
 django-admin  --version
 python3 manage.py runserver
+
+- open a web browser to http://127.0.0.1:8000/
+
+### 7. Create a django app
+python3 manage.py startapp main
