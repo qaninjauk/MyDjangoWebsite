@@ -15,6 +15,8 @@ Including another URLconf
 """
 from xml.etree.ElementInclude import include
 from django.contrib import admin
+
+#Modified to add include
 from django.urls import path, include
 
 urlpatterns = [
