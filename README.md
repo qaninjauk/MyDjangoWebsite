@@ -46,3 +46,20 @@ see models.py example
 ### 8. Create a models
 make the changes to models.py 
 - python3 manage.py makemigrations main
+
+### 9. Editt database from Python command line
+make the changes to models.py 
+python3  manage.py shell
+
+Add to database 
+
+>>> from main.models import Item,ToDoList
+>>> t = ToDoList (name="Tims\'s List")
+>>> t.save()
+>>> ToDoList.objects.all()
+
+>>> ToDoList.objects.get(id=1)
+
+>>> t.item_set.all()
+
+>>> t.item_set.create(text="Go to the mall",complete=False)
