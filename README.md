@@ -32,3 +32,17 @@ python3 manage.py runserver
 
 ### 7. Create a django app
 python3 manage.py startapp main
+
+
+### 7. Create a database for Django
+Configure settings.py by adding to INSTALLED_APPS = [
+-     'main.apps.MainConfig',
+then run
+-   python3 manage.py migrate
+
+### 7. Create a models
+see models.py example
+
+### 8. Create a models
+make the changes to models.py 
+- python3 manage.py makemigrations main
