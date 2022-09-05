@@ -34,20 +34,20 @@ python3 manage.py runserver
 python3 manage.py startapp main
 
 
-### 7. Create a database for Django
+### 8. Create a database for Django
 Configure settings.py by adding to INSTALLED_APPS = [
 -     'main.apps.MainConfig',
 then run
 -   python3 manage.py migrate
 
-### 7. Create a models
+### 9. Create a models
 see models.py example
 
-### 8. Create a models
+### 10. Create a models
 make the changes to models.py 
 - python3 manage.py makemigrations main
 
-### 9. Editt database from Python command line
+### 11. Edit database from Python command line
 make the changes to models.py 
 python3  manage.py shell
 
@@ -63,3 +63,19 @@ Add to database
 >>> t.item_set.all()
 
 >>> t.item_set.create(text="Go to the mall",complete=False)
+
+
+
+### 12. Creat DJANGO DBase user for admin
+- python3 manage.py createsuperuser
+    admin
+    qanijauk@gmail.com
+    @Gw*****30
+
+### 13.  Grant admon access to database
+Go to admin.py
+    add the following:
+        - from .models import  ToDoList
+        # Register your models here.
+        admin.site.register(ToDoList)
+
