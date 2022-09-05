@@ -72,7 +72,7 @@ Add to database
     qanijauk@gmail.com
     @Gw*****30
 
-### 13.  Grant admon access to database
+### 13.  Grant admin access to database
 Go to admin.py
     add the following:
         - from .models import  ToDoList
