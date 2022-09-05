@@ -79,3 +79,19 @@ Go to admin.py
         # Register your models here.
         admin.site.register(ToDoList)
 
+
+Under views.py add
+    from .models import ToDoList, Item
+    
+    #Create a Homepage
+    def home(response):
+    return render(response, "main/home.html", {})
+
+create a folder under main called templates
+create a folder under templates called main
+add base.html  and add home.html
+
+in home.html   add the following to the top
+    {% extends 'main/base.html' %}
+
+
